@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="458.0" prefWidth="600.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.drycleaning.controllers.AddPartnerController">
+   <Label alignment="CENTER" layoutX="185.0" layoutY="14.0" prefHeight="34.0" prefWidth="230.0" text="Добавление партнера">
+      <font>
+         <Font name="Franklin Gothic Medium" size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="110.0" layoutY="60.0" prefHeight="22.0" prefWidth="48.0" text="name">
+      <font>
+         <Font name="Franklin Gothic Medium" size="12.0" />
+      </font></Label>
+   <TextField fx:id="name" layoutX="185.0" layoutY="60.0" prefHeight="26.0" prefWidth="230.0" />
+   <Label layoutX="110.0" layoutY="100.0" prefHeight="18.0" prefWidth="48.0" text="director">
+      <font>
+         <Font name="Franklin Gothic Medium" size="12.0" />
+      </font></Label>
+   <TextField fx:id="director" layoutX="185.0" layoutY="98.0" prefHeight="26.0" prefWidth="230.0" />
+   <Label layoutX="110.0" layoutY="142.0" prefHeight="18.0" prefWidth="48.0" text="phone">
+      <font>
+         <Font name="Franklin Gothic Medium" size="12.0" />
+      </font></Label>
+   <TextField fx:id="phone" layoutX="185.0" layoutY="140.0" prefHeight="26.0" prefWidth="230.0" />
+   <TextField fx:id="email" layoutX="185.0" layoutY="180.0" prefHeight="26.0" prefWidth="230.0" />
+   <Label layoutX="110.0" layoutY="182.0" prefHeight="18.0" prefWidth="48.0" text="email" />
+   <Label layoutX="110.0" layoutY="221.0" prefHeight="18.0" prefWidth="48.0" text="inn" />
+   <TextField fx:id="inn" layoutX="185.0" layoutY="219.0" prefHeight="26.0" prefWidth="230.0" />
+   <TextField fx:id="rating" layoutX="185.0" layoutY="257.0" prefHeight="26.0" prefWidth="230.0" />
+   <Label layoutX="110.0" layoutY="259.0" prefHeight="18.0" prefWidth="48.0" text="rating" />
+   <ComboBox fx:id="manager" layoutX="185.0" layoutY="294.0" prefHeight="26.0" prefWidth="230.0" />
+   <Label layoutX="110.0" layoutY="296.0" prefHeight="18.0" prefWidth="48.0" text="manager" />
+   <DatePicker fx:id="createdAt" layoutX="185.0" layoutY="332.0" prefHeight="26.0" prefWidth="230.0" />
+   <Label layoutX="110.0" layoutY="334.0" prefHeight="18.0" prefWidth="75.0" text="created at" />
+   <Button layoutX="185.0" layoutY="397.0" mnemonicParsing="false" onAction="#addPartner" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: #00CED1;" text="Сохранить" />
+   <Button layoutX="311.0" layoutY="397.0" mnemonicParsing="false" onAction="#exit" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: #00CED1;" text="Отменить" />
+   <Label fx:id="error" alignment="CENTER" layoutX="186.0" layoutY="371.0" prefHeight="18.0" prefWidth="230.0" textFill="RED" />
+</AnchorPane>

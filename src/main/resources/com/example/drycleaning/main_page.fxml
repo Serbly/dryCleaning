@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anPan" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.drycleaning.controllers.MainPageController">
+    <Button fx:id="managerPartners" layoutX="189.0" layoutY="117.0" mnemonicParsing="false" onAction="#openPartnersEditPage" prefHeight="71.0" prefWidth="180.0" style="-fx-background-color: #00CED1;" text="Партнеры">
+      <font>
+         <Font name="Franklin Gothic Medium" size="12.0" />
+      </font></Button>
+    <Button fx:id="costPrice" layoutX="189.0" layoutY="200.0" mnemonicParsing="false" onAction="#openCostPriceCalc" prefHeight="71.0" prefWidth="180.0" style="-fx-background-color: #00CED1;" text="Рассчитать себестоимость">
+      <font>
+         <Font name="Franklin Gothic Medium" size="12.0" />
+      </font></Button>
+    <Button layoutX="460.0" layoutY="25.0" mnemonicParsing="false" onAction="#exit" prefHeight="41.0" prefWidth="104.0" style="-fx-background-color: #00CED1;" text="Выход">
+      <font>
+         <Font name="Franklin Gothic Medium" size="12.0" />
+      </font></Button>
+   <Label alignment="CENTER" layoutX="189.0" layoutY="36.0" prefHeight="30.0" prefWidth="180.0" text="Main page">
+      <font>
+         <Font name="Franklin Gothic Medium Italic" size="24.0" />
+      </font>
+   </Label>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.drycleaning.controllers.ServicesController">
+    <TableView fx:id="table" layoutX="14.0" layoutY="53.0" prefHeight="270.0" prefWidth="574.0">
+      <columns>
+          <TableColumn fx:id="id" prefWidth="47.2000150680542" text="id" />
+          <TableColumn fx:id="name" prefWidth="131.20001602172852" text="name" />
+          <TableColumn fx:id="description" prefWidth="122.40000915527344" text="description" />
+          <TableColumn fx:id="normTime" minWidth="0.0" prefWidth="105.20001220703125" text="norm time" />
+          <TableColumn fx:id="qualification" prefWidth="164.39996337890625" text="qualification" />
+      </columns>
+    </TableView>
+    <Label alignment="CENTER" layoutX="237.0" layoutY="14.0" prefHeight="29.0" prefWidth="128.0" text="Услуги">
+        <font>
+          <Font name="Franklin Gothic Medium Italic" size="24.0" />
+        </font>
+    </Label>
+    <Button layoutX="231.0" layoutY="338.0" mnemonicParsing="false" onAction="#exit" prefHeight="47.0" prefWidth="140.0" style="-fx-background-color: #00CED1;" text="Выход" />
+</AnchorPane>

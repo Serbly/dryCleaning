@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="466.0" prefWidth="763.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.drycleaning.controllers.PartnersController">
+    <TableView fx:id="table" layoutX="14.0" layoutY="56.0" prefHeight="340.0" prefWidth="734.0">
+      <columns>
+          <TableColumn fx:id="id" prefWidth="36.19999599456787" text="id" />
+          <TableColumn fx:id="name" prefWidth="114.20000076293945" text="name" />
+          <TableColumn fx:id="director" prefWidth="106.20001220703125" text="director" />
+          <TableColumn fx:id="phone" prefWidth="98.80001831054688" text="phone" />
+          <TableColumn fx:id="email" prefWidth="109.0" text="email" />
+          <TableColumn fx:id="inn" prefWidth="121.60006713867188" text="inn" />
+          <TableColumn fx:id="rating" prefWidth="46.39996337890625" text="rating" />
+          <TableColumn fx:id="createdAt" prefWidth="99.20001220703125" text="created at" />
+      </columns>
+    </TableView>
+    <Label layoutX="324.0" layoutY="14.0" prefHeight="35.0" prefWidth="115.0" text="Партнёры">
+        <font>
+          <Font name="Franklin Gothic Medium" size="24.0" />
+        </font>
+    </Label>
+    <Button layoutX="524.0" layoutY="416.0" mnemonicParsing="false" onAction="#exit" prefHeight="35.0" prefWidth="115.0" style="-fx-background-color: #00CED1;" text="Выход">
+      <font>
+         <Font name="Franklin Gothic Medium" size="12.0" />
+      </font></Button>
+   <Button layoutX="132.0" layoutY="416.0" mnemonicParsing="false" onAction="#addPartner" prefHeight="35.0" prefWidth="115.0" style="-fx-background-color: #00CED1;" text="Добавить">
+      <font>
+         <Font name="Franklin Gothic Medium" size="12.0" />
+      </font></Button>
+   <Button layoutX="264.0" layoutY="416.0" mnemonicParsing="false" onAction="#editPartner" prefHeight="35.0" prefWidth="115.0" style="-fx-background-color: #00CED1;" text="Изменить">
+      <font>
+         <Font name="Franklin Gothic Medium" size="12.0" />
+      </font></Button>
+   <Button layoutX="395.0" layoutY="416.0" mnemonicParsing="false" onAction="#deletePartner" prefHeight="35.0" prefWidth="115.0" style="-fx-background-color: #00CED1;" text="Удалить">
+      <font>
+         <Font name="Franklin Gothic Medium" size="12.0" />
+      </font></Button>
+</AnchorPane>

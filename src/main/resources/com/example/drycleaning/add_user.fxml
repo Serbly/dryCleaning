@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="423.0" prefWidth="600.0" style="-fx-background-color: #E0FFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.drycleaning.controllers.AddUserController">
+    <ComboBox fx:id="role" layoutX="194.0" layoutY="69.0" prefHeight="33.0" prefWidth="210.0" />
+    <Label alignment="CENTER" layoutX="182.0" layoutY="27.0" prefHeight="42.0" prefWidth="236.0" text="Добавление пользователя">
+        <font>
+          <Font name="Franklin Gothic Medium" size="18.0" />
+        </font>
+    </Label>
+    <Label layoutX="123.0" layoutY="76.0" prefHeight="18.0" prefWidth="74.0" text="role">
+        <font>
+          <Font name="Franklin Gothic Medium" size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="username" layoutX="195.0" layoutY="113.0" prefHeight="34.0" prefWidth="210.0" />
+    <Label layoutX="123.0" layoutY="121.0" prefHeight="18.0" prefWidth="74.0" text="username">
+        <font>
+          <Font name="Franklin Gothic Medium" size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="123.0" layoutY="164.0" prefHeight="18.0" prefWidth="74.0" text="password">
+        <font>
+          <Font name="Franklin Gothic Medium" size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="password" layoutX="195.0" layoutY="156.0" prefHeight="34.0" prefWidth="210.0" />
+    <TextField fx:id="fullname" layoutX="194.0" layoutY="200.0" prefHeight="34.0" prefWidth="210.0" />
+    <Label layoutX="123.0" layoutY="208.0" prefHeight="18.0" prefWidth="74.0" text="fullname">
+        <font>
+          <Font name="Franklin Gothic Medium" size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="123.0" layoutY="252.0" prefHeight="18.0" prefWidth="74.0" text="email">
+        <font>
+          <Font name="Franklin Gothic Medium" size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="email" layoutX="194.0" layoutY="244.0" prefHeight="34.0" prefWidth="210.0" />
+    <TextField fx:id="phone" layoutX="194.0" layoutY="287.0" prefHeight="34.0" prefWidth="210.0" />
+    <Label layoutX="123.0" layoutY="295.0" prefHeight="18.0" prefWidth="74.0" text="phone">
+        <font>
+          <Font name="Franklin Gothic Medium" size="14.0" />
+        </font>
+    </Label>
+    <Button layoutX="196.0" layoutY="366.0" mnemonicParsing="false" onAction="#addUser" prefHeight="42.0" prefWidth="88.0" style="-fx-background-color: #00CED1;" text="Добавить">
+        <font>
+          <Font name="Franklin Gothic Medium" size="14.0" />
+        </font>
+    </Button>
+    <Button layoutX="317.0" layoutY="366.0" mnemonicParsing="false" onAction="#exit" prefHeight="42.0" prefWidth="88.0" style="-fx-background-color: #00CED1;" text="Отменить">
+        <font>
+          <Font name="Franklin Gothic Medium" size="14.0" />
+        </font>
+    </Button>
+    <Label fx:id="error" alignment="CENTER" layoutX="197.0" layoutY="330.0" prefHeight="26.0" prefWidth="210.0" textFill="RED" />
+</AnchorPane>
