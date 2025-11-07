@@ -82,8 +82,6 @@ class CostCalculationServiceTest {
 
         CostCalculation saved = service.save(newCalc);
 
-        // Если ты хочешь, чтобы totalCost считался автоматически, добавь это в сервис.
-        // Например: calc.setTotalCost(materialsCost + laborCost)
         assertEquals(150.0, saved.getMaterialsCost() + saved.getLaborCost());
         verify(repo).save(any());
     }
